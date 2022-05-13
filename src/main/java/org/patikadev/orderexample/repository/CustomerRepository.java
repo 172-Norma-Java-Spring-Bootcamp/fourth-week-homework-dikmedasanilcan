@@ -12,6 +12,4 @@ public interface CustomerRepository extends JpaRepository<Customer,Long> {
     Collection<Customer> findCustomersByIsDeleted(boolean isDeleted);
     Customer getCustomerByEmail(String email);
     Customer getCustomerByUsername(String email);
-
-    Collection<Customer> findAllCustomersByDeleteStatusByJPQL(boolean isDeleted);
 }
